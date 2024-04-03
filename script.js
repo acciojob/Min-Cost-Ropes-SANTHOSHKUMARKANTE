@@ -6,7 +6,7 @@ function mincost(arr)
 	let len = arr.length;//4
 	while(arr.length>1){
 		let sum = arr[0]+arr[1];//5 9 15
-		arr2.push(sum);/{5} {5,9} {5,9,15}
+		arr2.push(sum);//{5} {5,9} {5,9,15}
 		arr = arr.splice(2);//{5,4,6} {9,6} {15}
 		arr.push(sum);
 		arr.sort((a,b) => a-b);//{4,5,6} {6,9} {15}
